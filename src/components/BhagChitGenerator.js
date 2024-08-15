@@ -21,7 +21,7 @@ const BhagChitGenerator = () => {
                 const filledData = fillMergedCells(jsonData);
                 sheetsData[sheetName] = {
                     data: filledData.filter(row => row[6] !== ''), // Filter out rows without Mangalacharan data
-                    shlokKramank: sheet['G2'] ? sheet['G2'].v : ''
+                    shlokKramank: sheet['J2'] ? sheet['J2'].v : ''
                 };
             });
             setData(sheetsData);
